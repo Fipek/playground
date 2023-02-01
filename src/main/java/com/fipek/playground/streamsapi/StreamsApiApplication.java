@@ -76,6 +76,13 @@ public class StreamsApiApplication {
 
         List<String> collect = people.stream().flatMap(person -> person.getBooks().stream()).collect(Collectors.toList());
         System.out.println(collect);
+
+        // Reduce
+        int reduce = people.stream()
+                .filter(person -> person.getGender().equals(Gender.MALE))
+                .reduce(0, (result, person) -> result + person.getAge(), Integer::sum);
+
+        System.out.println(reduce); // 133
     }
 
     private static List<Person> getPeople() {
