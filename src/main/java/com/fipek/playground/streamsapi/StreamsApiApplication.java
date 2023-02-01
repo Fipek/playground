@@ -74,6 +74,7 @@ public class StreamsApiApplication {
                 .max(Comparator.comparing(Person::getAge))
                 .map(Person::getName);
 
+        // Flat list
         List<String> collect = people.stream().flatMap(person -> person.getBooks().stream()).collect(Collectors.toList());
         System.out.println(collect);
 
