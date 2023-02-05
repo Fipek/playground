@@ -13,3 +13,6 @@ In this repository, I tried a lot of different useful apis, libraries and approa
 * Optional
   * orElse & orElseGet
   * ifPresent & ifPresentOrElse
+* SOLID
+  * Single Responsibility
+  * Open-Closed
