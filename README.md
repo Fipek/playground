@@ -16,3 +16,4 @@ In this repository, I tried a lot of different useful apis, libraries and approa
 * SOLID
   * Single Responsibility
   * Open-Closed
+  * Liskov Substitution
