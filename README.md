@@ -17,3 +17,4 @@ In this repository, I tried a lot of different useful apis, libraries and approa
   * Single Responsibility
   * Open-Closed
   * Liskov Substitution
+  * Interface Segregation
