@@ -1,4 +1,4 @@
-package com.fipek.playground.solid.dependencyinversion;
+package com.fipek.playground.solid.dependencyinversion.exampleone;
 
 import java.util.List;
 

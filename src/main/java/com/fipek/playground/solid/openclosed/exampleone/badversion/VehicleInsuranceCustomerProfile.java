@@ -1,4 +1,4 @@
-package com.fipek.playground.solid.openclosed.badversion;
+package com.fipek.playground.solid.openclosed.exampleone.badversion;
 
 import java.util.Random;
 

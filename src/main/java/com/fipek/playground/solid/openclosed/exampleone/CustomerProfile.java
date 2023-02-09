@@ -1,4 +1,4 @@
-package com.fipek.playground.solid.openclosed;
+package com.fipek.playground.solid.openclosed.exampleone;
 
 public interface CustomerProfile {
 

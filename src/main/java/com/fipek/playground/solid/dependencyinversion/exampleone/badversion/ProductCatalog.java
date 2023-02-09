@@ -1,4 +1,4 @@
-package com.fipek.playground.solid.dependencyinversion.badversion;
+package com.fipek.playground.solid.dependencyinversion.exampleone.badversion;
 
 public class ProductCatalog {
     // ProductCatalog is high-level module and directly dependent on SQLProductRepository

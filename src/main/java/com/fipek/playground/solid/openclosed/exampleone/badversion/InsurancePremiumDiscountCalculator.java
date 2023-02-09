@@ -1,4 +1,6 @@
-package com.fipek.playground.solid.openclosed.badversion;
+package com.fipek.playground.solid.openclosed.exampleone.badversion;
+
+import com.fipek.playground.solid.openclosed.exampleone.HealthInsuranceCustomerProfile;
 
 public class InsurancePremiumDiscountCalculator {
 
