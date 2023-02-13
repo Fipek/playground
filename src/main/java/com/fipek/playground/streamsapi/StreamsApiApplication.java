@@ -22,6 +22,12 @@ public class StreamsApiApplication {
 
         //females.forEach(System.out::println);
 
+        List<Person> hasSecondName = people.stream()
+                .filter(person -> person.getSecondName().isPresent() && "Max".equals(person.getSecondName().get()))
+                .collect(Collectors.toList());
+
+        //System.out.println(hasSecondName);
+
         // Sort
         List<Person> sorted = people.stream()
                 .sorted(Comparator.comparing(Person::getAge)
@@ -88,14 +94,14 @@ public class StreamsApiApplication {
 
     private static List<Person> getPeople() {
         return List.of(
-                new Person("James Bond", 20, Gender.MALE, List.of("Python", "Java", "JavaScript")),
-                new Person("Alina Smith", 33, Gender.FEMALE, List.of("Python", "JavaScript")),
-                new Person("Helen White", 57, Gender.FEMALE, List.of("Java", "JavaScript")),
-                new Person("Alex Boz", 14, Gender.MALE, List.of()),
-                new Person("Jamie Goa", 99, Gender.MALE, List.of("JavaScript")),
-                new Person("AJamie Goa1", 99, Gender.FEMALE, List.of("Java")),
-                new Person("Anna Cook", 7, Gender.FEMALE, List.of("Python", "Java")),
-                new Person("Zelda Brown", 120, Gender.FEMALE, List.of("Python", "Java", "JavaScript"))
+                new Person("James Bond", 20, Gender.MALE, List.of("Python", "Java", "JavaScript"), Optional.empty()),
+                new Person("Alina Smith", 33, Gender.FEMALE, List.of("Python", "JavaScript"), Optional.empty()),
+                new Person("Helen White", 57, Gender.FEMALE, List.of("Java", "JavaScript"), Optional.empty()),
+                new Person("Alex Boz", 14, Gender.MALE, List.of(), Optional.of("Max")),
+                new Person("Jamie Goa", 99, Gender.MALE, List.of("JavaScript"), Optional.empty()),
+                new Person("AJamie Goa1", 99, Gender.FEMALE, List.of("Java"), Optional.empty()),
+                new Person("Anna Cook", 7, Gender.FEMALE, List.of("Python", "Java"), Optional.empty()),
+                new Person("Zelda Brown", 120, Gender.FEMALE, List.of("Python", "Java", "JavaScript"),Optional.empty())
         );
     }
 }
