@@ -19,3 +19,4 @@ In this repository, I tried a lot of different useful apis, libraries and approa
   * Liskov Substitution
   * Interface Segregation
   * Dependency Inversion
+* Abstract Class 
